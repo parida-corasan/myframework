@@ -18,10 +18,9 @@ public class loginStep {
 
     @Given("user on login page")
     public void user_on_login_page() {
-    String  expectedTitle="\"Login | Best solution for startups\"";
+
         Driver.getDriver().get(configurationReader.getProperty("UploginPage"));
-        WebDriverWait wait=new WebDriverWait(Driver.getDriver(),10);
-        wait.until(ExpectedConditions.titleIs(expectedTitle));
+
 
     }
 

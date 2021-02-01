@@ -8,6 +8,8 @@ import org.junit.AfterClass;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+import java.util.concurrent.TimeUnit;
+
 public class hooks {
 //cukes runner Automatically run this class
 
@@ -26,18 +28,17 @@ public class hooks {
 
 
 
-    @AfterClass
+  @After
     public void ScreenshotIFfail(Scenario scenario){
         System.out.println("scenario.getName() = " + scenario.getName());
         System.out.println("scenario.getSourceTagNames() = " + scenario.getSourceTagNames());
         System.out.println("scenario.isFailed() = " + scenario.isFailed());
-
-
-
             byte[] screenshot =
  ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
 
             scenario.attach(screenshot, "image/png", scenario.getName());
+
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         }
 
 
