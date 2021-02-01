@@ -13,8 +13,7 @@ package com.UP.pages;public class employeePage {
     public WebElement  sth2;
 
 
-    @FindBy()
-    public WebElement sth3;
+    
   
   
 }
