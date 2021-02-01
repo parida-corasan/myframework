@@ -13,11 +13,13 @@ public class hooks {
 
     @Before(order=1)
     public void setUpScenario(){
+
         System.out.println(" @Before(order=1)===>Scenario set up");
     }
 
     @Before (order = 2)
     public void setUpDATAbaseConnection(){
+
         System.out.println("@Before (order = 2)===>Set up data base");
     }
 

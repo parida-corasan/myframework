@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-01-31T20:34:33.611Z",
+        "start_timestamp": "2021-02-01T03:22:47.711Z",
         "before": [
           {
             "result": {
-              "duration": 1533000,
+              "duration": 1603000,
               "status": "passed"
             },
             "match": {
@@ -16,7 +16,7 @@
           },
           {
             "result": {
-              "duration": 253000,
+              "duration": 186000,
               "status": "passed"
             },
             "match": {
@@ -24,14 +24,14 @@
             }
           }
         ],
-        "line": 12,
-        "name": "Title verification After search",
+        "line": 9,
+        "name": "login with correct credential",
         "description": "",
-        "id": ";title-verification-after-search;search-value-compare-to-expected-value;2",
+        "id": "login-feature;login-with-correct-credential",
         "after": [
           {
             "result": {
-              "duration": 151469000,
+              "duration": 136863000,
               "status": "passed"
             },
             "match": {
@@ -40,69 +40,49 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Template",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 9088310000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027login\u0027]\"}\n  (Session info: chrome\u003d87.0.4280.88)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-alpha-7\u0027, revision: \u0027de8579b6d5\u0027\nSystem info: host: \u0027paridas-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:82f:2fb9:32f:60b3%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/_1/h3tdbn3s75z...}, goog:chromeOptions: {debuggerAddress: localhost:62795}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 0ced4eb1533bfc4850a679f90290abc2\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027login\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:379)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\n\tat com.sun.proxy.$Proxy24.sendKeys(Unknown Source)\n\tat com.UP.StepDefinetion.loginStep.user_enter_correct_credential_as_posmanager(loginStep.java:33)\n\tat ✽.user enter correct email and password as posmanager(file:///Users/paridaabubakir/IdeaProjects/PRACTICE/src/test/resources/Features/login.feature:10)\n",
+              "duration": 7499734000,
+              "status": "failed"
             },
-            "line": 6,
-            "name": "user on home page",
+            "line": 10,
+            "name": "user enter correct email and password as posmanager",
             "match": {
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.user_on_home_page()"
+              "location": "com.UP.StepDefinetion.loginStep.user_enter_correct_credential_as_posmanager()"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1786704000,
-              "status": "passed"
+              "duration": 310000,
+              "status": "skipped"
             },
-            "line": 7,
-            "name": "user search \"teacup\"",
+            "line": 11,
+            "name": "user should see dashboard",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"teacup\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.userSearch(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 25399000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User should see \"Teacup\" in the right side of page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Teacup\"",
-                  "offset": 16
-                }
-              ],
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.userShouldSeeInTheRightSideOfPage(java.lang.String)"
+              "location": "com.UP.StepDefinetion.loginStep.user_should_see_dashboard()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@search"
+            "name": "@positive"
+          },
+          {
+            "name": "@login"
           }
         ]
       },
       {
-        "start_timestamp": "2021-01-31T20:34:44.752Z",
+        "start_timestamp": "2021-02-01T03:22:55.458Z",
         "before": [
           {
             "result": {
-              "duration": 312000,
+              "duration": 262000,
               "status": "passed"
             },
             "match": {
@@ -111,102 +91,7 @@
           },
           {
             "result": {
-              "duration": 791000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.UP.StepDefinetion.hooks.setUpDATAbaseConnection()"
-            }
-          }
-        ],
-        "line": 13,
-        "name": "Title verification After search",
-        "description": "",
-        "id": ";title-verification-after-search;search-value-compare-to-expected-value;3",
-        "after": [
-          {
-            "result": {
-              "duration": 178568000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.UP.StepDefinetion.hooks.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Template",
-        "steps": [
-          {
-            "result": {
-              "duration": 1967688000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user on home page",
-            "match": {
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.user_on_home_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2355339000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user search \"bento box\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"bento box\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.userSearch(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32575000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User should see \"Bento\" in the right side of page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Bento\"",
-                  "offset": 16
-                }
-              ],
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.userShouldSeeInTheRightSideOfPage(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@search"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-01-31T20:34:49.304Z",
-        "before": [
-          {
-            "result": {
-              "duration": 353000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.UP.StepDefinetion.hooks.setUpScenario()"
-            }
-          },
-          {
-            "result": {
-              "duration": 145000,
+              "duration": 173000,
               "status": "passed"
             },
             "match": {
@@ -215,13 +100,13 @@
           }
         ],
         "line": 14,
-        "name": "Title verification After search",
+        "name": "login with incorrect credential",
         "description": "",
-        "id": ";title-verification-after-search;search-value-compare-to-expected-value;4",
+        "id": "login-feature;login-with-incorrect-credential",
         "after": [
           {
             "result": {
-              "duration": 144783000,
+              "duration": 130066000,
               "status": "passed"
             },
             "match": {
@@ -230,93 +115,223 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Template",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2149676000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027login\u0027]\"}\n  (Session info: chrome\u003d87.0.4280.88)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-alpha-7\u0027, revision: \u0027de8579b6d5\u0027\nSystem info: host: \u0027paridas-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:82f:2fb9:32f:60b3%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/_1/h3tdbn3s75z...}, goog:chromeOptions: {debuggerAddress: localhost:62817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 3f6fe2d0552c5bd411ea040b643d44fd\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027login\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:379)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\n\tat com.sun.proxy.$Proxy24.sendKeys(Unknown Source)\n\tat com.UP.StepDefinetion.loginStep.user_enter_incorrect_credential_as_posmanager(loginStep.java:53)\n\tat ✽.user enter incorrect email and password as posmanager(file:///Users/paridaabubakir/IdeaProjects/PRACTICE/src/test/resources/Features/login.feature:15)\n",
+              "duration": 1351512000,
+              "status": "failed"
             },
-            "line": 6,
-            "name": "user on home page",
+            "line": 15,
+            "name": "user enter incorrect email and password as posmanager",
             "match": {
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.user_on_home_page()"
+              "location": "com.UP.StepDefinetion.loginStep.user_enter_incorrect_credential_as_posmanager()"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1523452000,
-              "status": "passed"
+              "duration": 546000,
+              "status": "skipped"
             },
-            "line": 7,
-            "name": "user search \"shah rukh khan\"",
+            "line": 16,
+            "name": "user should see error message",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"shah rukh khan\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.userSearch(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 44893000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User should see \"Shah Rukh Khan\" in the right side of page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Shah Rukh Khan\"",
-                  "offset": 16
-                }
-              ],
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.userShouldSeeInTheRightSideOfPage(java.lang.String)"
+              "location": "com.UP.StepDefinetion.loginStep.user_should_see_error_message()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@search"
+            "name": "@negative"
+          },
+          {
+            "name": "@login"
           }
         ]
       },
       {
-        "start_timestamp": "2021-01-31T20:34:53.183Z",
+        "start_timestamp": "2021-02-01T03:22:56.977Z",
         "before": [
           {
             "result": {
-              "duration": 280000,
+              "duration": 3159000,
               "status": "passed"
             },
             "match": {
               "location": "com.UP.StepDefinetion.hooks.setUpScenario()"
             }
           },
+          {
+            "result": {
+              "duration": 271000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.UP.StepDefinetion.hooks.setUpDATAbaseConnection()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "login with correct credential",
+        "description": "",
+        "id": "login-feature;login-with-correct-credential",
+        "after": [
+          {
+            "result": {
+              "duration": 135783000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.UP.StepDefinetion.hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027login\u0027]\"}\n  (Session info: chrome\u003d87.0.4280.88)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-alpha-7\u0027, revision: \u0027de8579b6d5\u0027\nSystem info: host: \u0027paridas-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:82f:2fb9:32f:60b3%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/_1/h3tdbn3s75z...}, goog:chromeOptions: {debuggerAddress: localhost:62836}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 17dfc07f4a5cae7003f650bfb288812e\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027login\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:379)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\n\tat com.sun.proxy.$Proxy24.sendKeys(Unknown Source)\n\tat com.UP.StepDefinetion.loginStep.userEnterCorrectEmailAndPasswordAsEventmanager(loginStep.java:73)\n\tat ✽.user enter correct email and password as eventmanager(file:///Users/paridaabubakir/IdeaProjects/PRACTICE/src/test/resources/Features/login.feature:20)\n",
+              "duration": 1266734000,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "user enter correct email and password as eventmanager",
+            "match": {
+              "location": "com.UP.StepDefinetion.loginStep.userEnterCorrectEmailAndPasswordAsEventmanager()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 802000,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "eventmanager should see dashboard",
+            "match": {
+              "location": "com.UP.StepDefinetion.loginStep.eventmanagerShouldSeeDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@positive"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-01T03:22:58.404Z",
+        "before": [
+          {
+            "result": {
+              "duration": 842000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.UP.StepDefinetion.hooks.setUpScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 271000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.UP.StepDefinetion.hooks.setUpDATAbaseConnection()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "login with incorrect credential",
+        "description": "",
+        "id": "login-feature;login-with-incorrect-credential",
+        "after": [
+          {
+            "result": {
+              "duration": 130192000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.UP.StepDefinetion.hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027login\u0027]\"}\n  (Session info: chrome\u003d87.0.4280.88)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-alpha-7\u0027, revision: \u0027de8579b6d5\u0027\nSystem info: host: \u0027paridas-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:82f:2fb9:32f:60b3%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/_1/h3tdbn3s75z...}, goog:chromeOptions: {debuggerAddress: localhost:62854}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: cb20143dcce54691afc81f1bd485a311\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027login\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:379)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\n\tat com.sun.proxy.$Proxy24.sendKeys(Unknown Source)\n\tat com.UP.StepDefinetion.loginStep.userEnterIncorrectEmailAndPasswordAseventmanager(loginStep.java:82)\n\tat ✽.user enter incorrect email and password aseventmanager(file:///Users/paridaabubakir/IdeaProjects/PRACTICE/src/test/resources/Features/login.feature:25)\n",
+              "duration": 1086693000,
+              "status": "failed"
+            },
+            "line": 25,
+            "name": "user enter incorrect email and password aseventmanager",
+            "match": {
+              "location": "com.UP.StepDefinetion.loginStep.userEnterIncorrectEmailAndPasswordAseventmanager()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 180000,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "eventmanager should see error message",
+            "match": {
+              "location": "com.UP.StepDefinetion.loginStep.eventmanagerShouldSeeErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negative"
+          },
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-01T03:22:59.645Z",
+        "before": [
           {
             "result": {
               "duration": 195000,
               "status": "passed"
             },
             "match": {
+              "location": "com.UP.StepDefinetion.hooks.setUpScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1294000,
+              "status": "passed"
+            },
+            "match": {
               "location": "com.UP.StepDefinetion.hooks.setUpDATAbaseConnection()"
             }
           }
         ],
-        "line": 15,
-        "name": "Title verification After search",
+        "line": 30,
+        "name": "login with correct credential",
         "description": "",
-        "id": ";title-verification-after-search;search-value-compare-to-expected-value;5",
+        "id": "login-feature;login-with-correct-credential",
         "after": [
           {
             "result": {
-              "duration": 134528000,
+              "duration": 126167000,
               "status": "passed"
             },
             "match": {
@@ -325,69 +340,49 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Template",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1855917000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027login\u0027]\"}\n  (Session info: chrome\u003d87.0.4280.88)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-alpha-7\u0027, revision: \u0027de8579b6d5\u0027\nSystem info: host: \u0027paridas-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:82f:2fb9:32f:60b3%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/_1/h3tdbn3s75z...}, goog:chromeOptions: {debuggerAddress: localhost:62875}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: bdb5b3fe70c4b1397855114041b08602\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027login\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:379)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\n\tat com.sun.proxy.$Proxy24.sendKeys(Unknown Source)\n\tat com.UP.StepDefinetion.loginStep.userEnterCorrectEmailAndPasswordAsSalesmanager(loginStep.java:98)\n\tat ✽.user enter correct email and password as salesmanager(file:///Users/paridaabubakir/IdeaProjects/PRACTICE/src/test/resources/Features/login.feature:31)\n",
+              "duration": 1138244000,
+              "status": "failed"
             },
-            "line": 6,
-            "name": "user on home page",
+            "line": 31,
+            "name": "user enter correct email and password as salesmanager",
             "match": {
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.user_on_home_page()"
+              "location": "com.UP.StepDefinetion.loginStep.userEnterCorrectEmailAndPasswordAsSalesmanager()"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1994707000,
-              "status": "passed"
+              "duration": 178000,
+              "status": "skipped"
             },
-            "line": 7,
-            "name": "user search \"stephen cho\"",
+            "line": 32,
+            "name": "salesmanager should see dashboard",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"stephen cho\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.userSearch(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 31116000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User should see \"See results about\" in the right side of page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"See results about\"",
-                  "offset": 16
-                }
-              ],
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.userShouldSeeInTheRightSideOfPage(java.lang.String)"
+              "location": "com.UP.StepDefinetion.loginStep.salesmanagerShouldSeeDashboard()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@search"
+            "name": "@positive"
+          },
+          {
+            "name": "@login"
           }
         ]
       },
       {
-        "start_timestamp": "2021-01-31T20:34:57.207Z",
+        "start_timestamp": "2021-02-01T03:23:00.929Z",
         "before": [
           {
             "result": {
-              "duration": 187000,
+              "duration": 123000,
               "status": "passed"
             },
             "match": {
@@ -396,7 +391,7 @@
           },
           {
             "result": {
-              "duration": 124000,
+              "duration": 140000,
               "status": "passed"
             },
             "match": {
@@ -404,14 +399,14 @@
             }
           }
         ],
-        "line": 16,
-        "name": "Title verification After search",
+        "line": 35,
+        "name": "login with incorrect credential",
         "description": "",
-        "id": ";title-verification-after-search;search-value-compare-to-expected-value;6",
+        "id": "login-feature;login-with-incorrect-credential",
         "after": [
           {
             "result": {
-              "duration": 114892000,
+              "duration": 126285000,
               "status": "passed"
             },
             "match": {
@@ -420,69 +415,49 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Template",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2030116000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027login\u0027]\"}\n  (Session info: chrome\u003d87.0.4280.88)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-alpha-7\u0027, revision: \u0027de8579b6d5\u0027\nSystem info: host: \u0027paridas-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:82f:2fb9:32f:60b3%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/_1/h3tdbn3s75z...}, goog:chromeOptions: {debuggerAddress: localhost:62892}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: b81c71ddceb7fb2a08fd851b30611030\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027login\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:379)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\n\tat com.sun.proxy.$Proxy24.sendKeys(Unknown Source)\n\tat com.UP.StepDefinetion.loginStep.userEnterIncorrectEmailAndPasswordSalesmanager(loginStep.java:107)\n\tat ✽.user enter incorrect email and password salesmanager(file:///Users/paridaabubakir/IdeaProjects/PRACTICE/src/test/resources/Features/login.feature:36)\n",
+              "duration": 1184548000,
+              "status": "failed"
             },
-            "line": 6,
-            "name": "user on home page",
+            "line": 36,
+            "name": "user enter incorrect email and password salesmanager",
             "match": {
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.user_on_home_page()"
+              "location": "com.UP.StepDefinetion.loginStep.userEnterIncorrectEmailAndPasswordSalesmanager()"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1433383000,
-              "status": "passed"
+              "duration": 156000,
+              "status": "skipped"
             },
-            "line": 7,
-            "name": "user search \"monica belluci\"",
+            "line": 37,
+            "name": "salesmanager should see error message",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"monica belluci\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.userSearch(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 36889000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User should see \"Monica Bellucci\" in the right side of page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Monica Bellucci\"",
-                  "offset": 16
-                }
-              ],
-              "location": "com.UP.StepDefinetion.googlePageSearchStep.userShouldSeeInTheRightSideOfPage(java.lang.String)"
+              "location": "com.UP.StepDefinetion.loginStep.salesmanagerShouldSeeErrorMessage()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@search"
+            "name": "@negative"
+          },
+          {
+            "name": "@login"
           }
         ]
       }
     ],
-    "name": "",
-    "description": "  Agile story:as a user,I should able to search when I am home page",
-    "id": "",
+    "name": "Login feature",
+    "description": "  As a user I should able to login different accounts with\n  correct credential, and dashboard displayed.\n\n  Background  user on login page\n    Given user on login page",
+    "id": "login-feature",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/homePgeSearch.feature",
+    "uri": "file:src/test/resources/Features/login.feature",
     "tags": []
   }
 ]

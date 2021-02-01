@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt"},
         features ="src/test/resources/Features",
         glue="com/UP/StepDefinetion",
-        dryRun = false,
-        tags=" @search"
+        dryRun =false,
+        tags="@login"
        // publish=true
 )
 public class cukeRunner {
