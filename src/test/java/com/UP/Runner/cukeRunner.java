@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features ="src/test/resources/Features",
         glue="com/UP/StepDefinetion",
         dryRun =false,
-        tags="@login"
+        tags="@search"
        // publish=true
 )
 public class cukeRunner {

@@ -10,31 +10,27 @@ import org.junit.Assert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class loginStep {
-    loginPage loginpage=new loginPage();
-
+    loginPage loginpage = new loginPage();
 
     @Given("user on login page")
     public void user_on_login_page() {
-    String  expectedTitle="\"Login | Best solution for startups\"";
+
         Driver.getDriver().get(configurationReader.getProperty("UploginPage"));
-        WebDriverWait wait=new WebDriverWait(Driver.getDriver(),10);
-        wait.until(ExpectedConditions.titleIs(expectedTitle));
 
     }
 
 
-
-
     @When("user enter correct email and password as posmanager")
     public void user_enter_correct_credential_as_posmanager() {
-   loginpage.eamilBox.sendKeys(configurationReader.getProperty("posEmail"));
+        loginpage.eamilBox.sendKeys(configurationReader.getProperty("posEmail"));
         Driver.getDriver().manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-   loginpage.passwordBox.sendKeys(configurationReader.getProperty("posPassword"));
+        loginpage.passwordBox.sendKeys(configurationReader.getProperty("posPassword"));
         Driver.getDriver().manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-   loginpage.loginButton.click();
+        loginpage.loginButton.click();
     }
 
 
@@ -76,6 +72,13 @@ public class loginStep {
         Driver.getDriver().manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         loginpage.loginButton.click();
     }
+    @Then("eventmanager should see dashboard")
+    public void eventmanagerShouldSeeDashboard() {
+        String expectTitle="Odoo";
+        String ActualTitle=Driver.getDriver().getTitle();
+        Assert.assertEquals(expectTitle,ActualTitle);
+    }
+
 
     @When("user enter incorrect email and password aseventmanager")
     public void userEnterIncorrectEmailAndPasswordAseventmanager() {
@@ -87,7 +90,13 @@ public class loginStep {
     }
 
 
+    @Then("eventmanager should see error message")
+    public void eventmanagerShouldSeeErrorMessage() {
+        String Errormessage="Wrong login/password";
+        String actualmessage=loginpage.erorMessage.getText();
 
+        Assert.assertEquals(Errormessage,actualmessage);
+    }
 
 
 
@@ -101,6 +110,12 @@ public class loginStep {
         Driver.getDriver().manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         loginpage.loginButton.click();
     }
+    @Then("salesmanager should see dashboard")
+    public void salesmanagerShouldSeeDashboard() {
+        String expectTitle="Odoo";
+        String ActualTitle=Driver.getDriver().getTitle();
+        Assert.assertEquals(expectTitle,ActualTitle);
+    }
 
     @When("user enter incorrect email and password salesmanager")
     public void userEnterIncorrectEmailAndPasswordSalesmanager() {
@@ -110,29 +125,6 @@ public class loginStep {
         Driver.getDriver().manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         loginpage.loginButton.click();
     }
-
-    @Then("eventmanager should see dashboard")
-    public void eventmanagerShouldSeeDashboard() {
-        String expectTitle="Odoo";
-        String ActualTitle=Driver.getDriver().getTitle();
-        Assert.assertEquals(expectTitle,ActualTitle);
-    }
-
-    @Then("eventmanager should see error message")
-    public void eventmanagerShouldSeeErrorMessage() {
-        String Errormessage="Wrong login/password";
-        String actualmessage=loginpage.erorMessage.getText();
-
-        Assert.assertEquals(Errormessage,actualmessage);
-    }
-
-    @Then("salesmanager should see dashboard")
-    public void salesmanagerShouldSeeDashboard() {
-        String expectTitle="Odoo";
-        String ActualTitle=Driver.getDriver().getTitle();
-        Assert.assertEquals(expectTitle,ActualTitle);
-    }
-
     @Then("salesmanager should see error message")
     public void salesmanagerShouldSeeErrorMessage() {
         String Errormessage="Wrong login/password";
@@ -140,4 +132,21 @@ public class loginStep {
 
         Assert.assertEquals(Errormessage,actualmessage);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+

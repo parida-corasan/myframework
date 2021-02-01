@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class employeePage {
+<<<<<<< Updated upstream
   
   public employeePage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -23,4 +24,9 @@ public class employeePage {
     
   
   
+=======
+
+>>>>>>> Stashed changes
 }
+
+

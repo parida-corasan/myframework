@@ -26,7 +26,7 @@ public class hooks {
 
 
 
-    @AfterClass
+    @After
     public void ScreenshotIFfail(Scenario scenario){
         System.out.println("scenario.getName() = " + scenario.getName());
         System.out.println("scenario.getSourceTagNames() = " + scenario.getSourceTagNames());
@@ -34,20 +34,24 @@ public class hooks {
 
 
 
-            byte[] screenshot =
- ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+    byte[] screenshot =
+            ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
 
-            scenario.attach(screenshot, "image/png", scenario.getName());
-        }
-
+    scenario.attach(screenshot, "image/png", scenario.getName());
 
 
+    }
 
-    @After(order = 2)
+
+
+
+@After(order = 2)
     public void tearDown(){
         Driver.closeDriver();
         System.out.println("closeDriver");
     }
+
+
 
 
 
