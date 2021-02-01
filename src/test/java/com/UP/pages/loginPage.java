@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class loginPage {
-
+// Upgenix login page
     public loginPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
