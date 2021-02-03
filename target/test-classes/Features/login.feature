@@ -4,10 +4,6 @@ Feature: Login feature
   correct credential, and dashboard displayed.
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> paridabranch
   @positive
   Scenario: login with correct credential
     Given user on login page

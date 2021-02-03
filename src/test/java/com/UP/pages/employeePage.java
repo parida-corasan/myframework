@@ -6,10 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class employeePage {
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
->>>>>>> paridabranch
   
   public employeePage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -23,13 +19,8 @@ public class employeePage {
     @FindBy()
     public WebElement  sth2;
 
-// from my branch
-    
-  
-  
-=======
 
->>>>>>> Stashed changes
+
 }
 
 
