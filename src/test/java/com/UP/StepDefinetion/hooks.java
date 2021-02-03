@@ -28,27 +28,31 @@ public class hooks {
 
 
 
-  @After
+
+    @After(order = 1)
     public void ScreenshotIFfail(Scenario scenario){
         System.out.println("scenario.getName() = " + scenario.getName());
         System.out.println("scenario.getSourceTagNames() = " + scenario.getSourceTagNames());
         System.out.println("scenario.isFailed() = " + scenario.isFailed());
+
             byte[] screenshot =
  ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
 
             scenario.attach(screenshot, "image/png", scenario.getName());
-
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        }
+    }
 
 
 
 
-    @After(order = 2)
+
+@After(order = 2)
     public void tearDown(){
         Driver.closeDriver();
         System.out.println("closeDriver");
     }
+
+
 
 
 

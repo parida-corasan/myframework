@@ -1,0 +1,4 @@
+<<<<<<< HEAD
+=======
+file:src/test/resources/Features/homePgeSearch.feature:15
+>>>>>>> paridabranch
