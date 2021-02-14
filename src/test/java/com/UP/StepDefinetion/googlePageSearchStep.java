@@ -23,43 +23,23 @@ public class googlePageSearchStep {
 
 
 
-
-
-
-
-    @When("user search employee")
-    public void user_search_employee() {
-        hoPa.googleSearchBox.sendKeys("employee"+ Keys.ENTER);
-        Driver.getDriver().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-    }
-
-
-
-
-    @Then("User should see employee in the title")
-    public void user_should_see_employee_in_the_title() {
-     Assert.assertTrue(Driver.getDriver().getTitle().contains("employee"));
-    }
-
-
-
-
-
-
-
     @And("user search {string}")
     public void userSearch(String str) {
         hoPa.googleSearchBox.sendKeys(str+ Keys.ENTER);
+        Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
         if(str.equals("shah rukh khan")){
         Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);}
         else{
-            Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);}
+            Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        }
 
     }
 
 
     @Then("User should see {string} in the right side of page")
     public void userShouldSeeInTheRightSideOfPage(String str) {
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Assert.assertEquals(str,hoPa.pageTitle.getText());
     }
 }

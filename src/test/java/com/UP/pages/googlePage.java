@@ -14,7 +14,7 @@ public class googlePage {
     @FindBy(name = "q")
    public  WebElement  googleSearchBox ;
 
-  @FindBy(xpath = "//h2//span")
+  @FindBy(xpath = "//h2[@class='qrShPb kno-ecr-pt PZPZlf mfMhoc']")
     public WebElement pageTitle;
 
 

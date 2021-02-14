@@ -9,9 +9,9 @@ Feature:
 
   Examples: search value compare to expected value
     | search value   | expectedTitle   |
-    | teacup         | Teacup          |
+    | woodspoon     | WOODSPOON       |
     | bento box      | Bento           |
     | shah rukh khan | Shah Rukh Khan  |
-    | stephen cho    | stephen cho     |
+    | naruto         | Naruto          |
     | monica belluci | Monica Bellucci |
 
